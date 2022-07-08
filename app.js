@@ -97,13 +97,9 @@ function addArticle(){
    
 }
 
-function globalPrice() {
-    let global = document.querySelector('.global--price');
-let priceUnit = document.querySelector('.price--unit');
-let qty =document.querySelector('.qty');
+// function globalPrice() {
 
-document.querySelector('.global--price') = parseInt(qty.innerText) * parseInt (priceUnit.innerText)
-}
+// }
 
 
 
