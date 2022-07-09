@@ -55,11 +55,14 @@ function loadEvent(){
     let deleted = document.querySelector('.delete');
     deleted.addEventListener('click',deleteCart);
     
+
+    
 }
 
 
 function deleteCart(){
     document.querySelector('.modal--main--article').innerHTML = 'Your cart is empty' ;
+    document.querySelector('.count').innerText = '0';
 }
 
 let adding = document.querySelector('#adding');
@@ -78,7 +81,7 @@ function addArticle(){
           </div>
           <div class="articles--dsecription">
             <p class="name-shoes">Fall Limited Edition Sneakers</p>
-            <p class="price--unit">$ 125.00 x ${qty.innerText} <span class="global--price">${(qty.innerText)* (125.00) + '$'}</span></p>
+            <p class="price--unit">$ 125.00 x ${qty.innerText} <span class="global--price">${'$' + (qty.innerText)* (125.00)}</span></p>
           </div>
           <div class="delete">
             <img src="images/icon-delete.svg" alt="">
@@ -96,12 +99,6 @@ function addArticle(){
     }
    
 }
-
-// function globalPrice() {
-
-// }
-
-
 
 const thumbs = document.querySelectorAll('.image--product--container--thumbnail');
 
@@ -130,6 +127,7 @@ let count = document.querySelector('.count');
 
 function cartQuanity(){
     document.querySelector('.count').innerText = parseInt(document.querySelector('.qty').innerText);
+
 }
 
 // let next = document.querySelector('.next');
