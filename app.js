@@ -78,7 +78,7 @@ function addArticle(){
           </div>
           <div class="articles--dsecription">
             <p class="name-shoes">Fall Limited Edition Sneakers</p>
-            <p class="price--unit">$ 125.00 x ${qty.innerText} <span class="global--price">$375.00</span></p>
+            <p class="price--unit">$ 125.00 x ${qty.innerText} <span class="global--price">${(qty.innerText)* (125.00) + '$'}</span></p>
           </div>
           <div class="delete">
             <img src="images/icon-delete.svg" alt="">
